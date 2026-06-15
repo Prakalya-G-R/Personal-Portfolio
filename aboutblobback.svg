@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="backBlob" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2F0F8"></stop>
+      <stop offset="50%" stop-color="#EEEAF8"></stop>
+      <stop offset="100%" stop-color="#FFDDEB"></stop>
+    </linearGradient>
+  </defs>
+
+  <path fill="url(#backBlob)" fill-opacity="0.9" d="M36.2,-16C46.4,-3.3,53.8,16,47.3,35.3C40.8,54.6,20.4,74,4.3,71.5C-11.8,69,-23.6,44.8,-36,22.1C-48.4,-0.6,-61.3,-21.8,-55.4,-32C-49.5,-42.2,-24.8,-41.6,-5.9,-38.2C13,-34.8,26,-28.7,36.2,-16Z" transform="translate(100 100)"></path>
+
+</svg>
