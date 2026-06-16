@@ -101,7 +101,7 @@
             padding-left: 300px !important;
             padding-right: 270px !important;
         }
-        #projects{
+        #projects, #certificates, #contact{
             padding-left: 300px !important;
             padding-right: 270px !important;
         }
@@ -662,7 +662,7 @@
         position: absolute;
         align-items: center;
         display:flex;
-        bottom: -12px;
+        bottom: -8px;
         height: 30px;
         justify-content: center;
         padding: 0 12px;
@@ -855,19 +855,284 @@
         transform: translateY(-1px);
     }
 
+    #certificates{
+        margin-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cert-card{
+        width: 100%;
+        background: white;
+        max-height: fit-content;
+        border-radius: 18px;
+        box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow-wrap:inherit;
+        padding-bottom: 3px;
+        align-items: center;
+    }
 
 
+    .certtitle svg{
+        width: 20px;
+        height: 20px;
+        color: rgb(109, 56, 184);
+
+    }
+
+    .certtitletext{
+        font-weight: 600;
+    }
+
+
+    .certsmallcards{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px 40px;
+        align-items: stretch;
+    }
+
+    .certsmcard{
+        width: 400px;
+        background: rgb(253, 250, 255);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        border: 1px solid #d9d9dd;
+        padding: 2px 10px;
+        display:flex;
+        margin: 0;
+        justify-content: center;
+        border-radius: 10px;
+        min-height: 50px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .certsmcard p{
+        margin: 2px 0;
+    }
+
+    .certtitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+        margin-top: 0;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .certsmtitle, .acheivement{
+        display: flex;
+        gap: 3px;
+        justify-content: flex-start;
+
+    }
+
+    .certsmtitle svg{
+        width: 20px;
+        height: 20px;
+        color: rgb(236, 201, 1);
+        margin-top: 3px;
+    }
+
+    .certftitle, .acheivetitle{
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .acheivement svg{
+        width: 13px;
+        height: 13px;
+        color: rgb(192, 168, 30);
+        margin-top: 4px;
+    }
+
+    .acheivement{
+        padding-left: 18px;
+    }
+
+    .certplatform{
+        font-size: 13px;
+        color: var(--description);
+        font-weight: 500;
+        padding-left: 20px;
+    }
+
+    .certlink{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .certlink svg{
+        width: 14px;
+        height: 14px;
+    }
+
+    .certdest{
+        font-size: 13px;
+        font-weight: 500;
+        color: rgb(56, 19, 99);
+        text-decoration: none;
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .certdest:hover{
+        opacity: 0.8;
+        transition: all 0.3s ease;
+        transform: translateY(-5px);
+        align-items: stretch;
+    }
+
+    .certdest:active{
+        transition: all 0.1s ease;
+        transform: translateY(2px);
+    }
+
+    #viewmorecert{
+        display:flex;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(
+            135deg,
+            var(--lavender) 0%,
+            rgb(187, 179, 179) 100%
+        );
+        color: white;
+        padding: 10px 18px;
+        gap: 8px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .view-more-cert{
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #viewmorecert svg{
+        width: 30px;
+        height: 20px;
+    }
+
+
+    #contact{
+        background: #fbfafa; /* same as site background */
+        border-top: 1px solid #e4e4e5;
+        margin: 0;
+        margin-top: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        padding-bottom: 30px;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .footleft{
+        width: 210px;
+    }
+    .nameinfooter{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .quote{
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--description);
+    }
+
+    .linksfoot{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+
+    .quicklinkhead{
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--description);
+        margin-left: -32px;
+    }
+
+    .quicklink{
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--description);
+        text-decoration: none;
+        margin-left: -28px;
+       
+    }
+
+    .letsconnecthead{
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--description);
+    }
+
+    .contactsfoot{
+        font-size: 12px;
+        font-weight: 500;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conti{
+        display: inline-flex;
+        text-decoration: none;
+        color:black;
+        border-radius: 50%;
+        padding: 6px;
+        background-color: #ebe8f0;
+        margin-right: 4px;
+    }
+
+    .contsoc{
+        text-decoration: none;
+        color: var(--description);
+    }
+
+    .copyrights{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        color: var(--description);
+    }
+
+    .quicklink:hover, .contsoc:hover{
+            color: rgb(115, 107, 171);
+        }
+
+    .contsoc:hover #conti{
+        transition: all 0.3s ease;
+        transform: translateY(-3px);
+    }
+
+
+
+    
 
     @media (max-width:768px){
 
         .proj-img img{
             width: 100%;
-        max-width: 350px;
-        height: auto;
-        }
-
-        .projsmallcards{
-            padding: 20px 30px;
+            max-width: 350px;
+            height: auto;
         }
 
         .projsmc{
@@ -883,7 +1148,58 @@
             flex-direction: column;
             align-items: center;
         }
-        
+        .contactsfoot{
+            display: flex;
+
+        }
+        #contact{
+            background: rgb(125, 80, 247);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+
+        }
+
+        .copyrights{
+            background: rgb(125, 80, 247);
+            color: white;
+        }
+
+        .copyrightshead{
+            margin-top: 0;
+        }
+
+        .nameinfooter, .quote{
+            text-align: center;
+        }
+        .nameinfooter{
+            margin-top: 0;
+        }
+
+        .letsconecthead, .quicklinkhead{
+            margin-top:0;
+            text-align: center;
+        }
+
+        .quote, .quicklink, .contsoc{
+            margin-bottom: 0;
+        }
+
+
+        .letsconnecthead, .contsoc, .quicklink, .quicklinkhead, .quote{
+            color: white;
+        }
+
+        .quicklink:hover, .contsoc:hover{
+            color: rgb(52, 16, 88);
+        }
+
+        .contsoc:hover #conti{
+            transition: all 0.3s ease;
+            transform: translateY(-3px);
+        }
 
         .hero-container{
         flex-direction: column;
@@ -907,7 +1223,7 @@
             left: 0;
         }
 
-        #home, #about, #projects, #skills{
+        #home, #about, #projects, #skills, #certificates{
             padding: 20px 30px !important;
         }
 
@@ -1004,6 +1320,8 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+
         .tag{
             font-size: 10px;
         }
@@ -1015,5 +1333,17 @@
             margin-left: 280px;
         }
         
+    }
+
+    @media (min-width:600px) and (max-width: 768px){
+        .projsmallcards{
+            padding: 20px 90px !important;
+        }
+    }
+
+    @media (max-width: 600px){
+        .projsmallcards{
+            padding: 20px 30px !important;
+        }
     }
 
