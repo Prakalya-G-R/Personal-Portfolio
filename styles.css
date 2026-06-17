@@ -932,6 +932,7 @@
         display: flex;
         gap: 3px;
         justify-content: flex-start;
+        color: black
 
     }
 
@@ -948,9 +949,9 @@
     }
 
     .acheivement svg{
-        width: 13px;
-        height: 13px;
-        color: rgb(192, 168, 30);
+        width: 15px;
+        height: 15px;
+        color: rgb(104, 107, 103);
         margin-top: 4px;
     }
 
